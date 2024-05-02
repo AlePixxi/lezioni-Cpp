@@ -1,5 +1,7 @@
 #include <iostream> // comando per includere le librerie (file C++ scritti da altri). iostream è una delle librerie che servono sempre
+#include <string>
 
+using namespace std;
 /*
     Una funzione è un blocco di codice (delimitato da {} dove si possono fare delle operazioni)
     e ritornare all'utente dei risultati.
@@ -30,7 +32,31 @@ int main() {
         che sia da una variabile o un dato (come in questo caso) a dentro una funzione (<<) 
         che sia da dentro una funione a dentro una variabile (>>)
     */
-    std::cout << "Hello World!";
+
+    std::string pippo = "ciaooooo\n";
+    std::cout << pippo;
+
+    int a = 12;
+    int b = 20;
+
+    string c = "20";
+    string d = "30";
+
+    float e = 2.5;
+
+    float tot = a + e;
+
+    cout << tot;
+
+    cout << "\n"<< a << a << a << a << a << a;
+
+
+
+
+
+    std::string pippo2;
+    cin >> pippo2;
+    cout<< pippo2;
 
     return 0; // bisogna specificare un valore di ritorno (o di output, come ti piace di più) perché è stato detto quando è stat creata la funzione (int main ...)
 }
