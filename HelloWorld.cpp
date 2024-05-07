@@ -48,8 +48,13 @@ int main() {
 
     cout << tot;
 
-    cout << "\n"<< a << a << a << a << a << a;
+    cout << "\n"<< a << a << a << a << a << a << endl;
 
+
+    const int x = 10;
+    cout << x <<endl;
+    x = 20;
+    cout << x;
 
 
 
