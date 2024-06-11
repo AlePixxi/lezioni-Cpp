@@ -17,6 +17,9 @@ using namespace std;
 
 // funzione main, funzione dalla quale partono TUTTI i programmi C++
 int main() {
+
+    string x1;
+    cout << x1 <<endl;
     
     /*
         [namespace]::[funzione] <</>> [roba da prendere dalla funzione o passare alla funzione]
@@ -51,10 +54,6 @@ int main() {
     cout << "\n"<< a << a << a << a << a << a << endl;
 
 
-    const int x = 10;
-    cout << x <<endl;
-    x = 20;
-    cout << x;
 
 
 

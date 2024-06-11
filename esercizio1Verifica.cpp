@@ -11,21 +11,31 @@ int main(){
     int personeTot;
     float bottiglieTot;
     int vinoTot;
-    int x;
+    float totaleSerata;
 
-    x = 7;
+    string risposta = "";
 
-    cin>> nPersone;
-    cin >> nBottiglie;
-    cin >> nVino;
+    while (risposta != "fine") {
 
-    personeTot= nPersone * 30;
-    bottiglieTot= nBottiglie * 3.50;
-    vinoTot= nVino * 18;
+        cin>> nPersone;
+        cin >> nBottiglie;
+        cin >> nVino;
+
+        personeTot= nPersone * 30;
+        bottiglieTot= nBottiglie * 3.50;
+        vinoTot= nVino * 18;
 
 
-   conto= personeTot + bottiglieTot + vinoTot;
+        conto = personeTot + bottiglieTot + vinoTot;
+        totaleSerata += conto;
 
-   cout << conto;
+        cout << "totale tavolo: ";
+        cout << conto<<endl;
+
+        cout << "risposta: ";
+        cin >> risposta;
+    }
+
+    cout << "Totale serata: " << totaleSerata;
     
 }

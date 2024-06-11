@@ -5,6 +5,8 @@ using namespace std;
 int main (){
     string programma ="avviato";
 
+
+
     while(programma == "avviato") {
         
 
@@ -14,7 +16,7 @@ int main (){
 
         if (risposta == "si") {
             cout << "continuo..." << endl;
-        } else if( risposta == "no"){
+        } else if( risposta == "no") {
 
             cout << "smetto..." << endl;
              programma = "spento";
@@ -23,10 +25,6 @@ int main (){
 
          cout << "non ho capito" << endl; 
         }
-        
-        
-
-
         
     }
 }
