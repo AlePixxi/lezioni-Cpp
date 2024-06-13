@@ -13,7 +13,9 @@ int main() {
 
     float totalePrezziProdotti;
 
-    for (int i=0;i<4;i++) {
+    string fine = "no";
+
+    while (fine == "no") {
         
         string codice;
         float prezzo;
@@ -25,6 +27,10 @@ int main() {
 
         cout << "Codice del prodotto: ";
         cin >> codice;
+
+        if (codice == "stop") {
+            fine = "si";
+        } else {
 
         cout << "Prezzo del prodotto: ";
         cin >> prezzo;
@@ -42,6 +48,8 @@ int main() {
         if (prezzoScontato > max) {
             max = prezzoScontato;
         }
+        }
+
 
     }
     cout << "-------------------------------------------------------" << endl;

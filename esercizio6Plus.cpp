@@ -10,13 +10,12 @@ int main() {
     float mediaPercSconto;
 
     float totaleSconti;
-
+    float prezzo;
     float totalePrezziProdotti;
 
-    for (int i=0;i<4;i++) {
+     do  {
         
         string codice;
-        float prezzo;
         float percSconto;
 
         float sconto;
@@ -43,7 +42,7 @@ int main() {
             max = prezzoScontato;
         }
 
-    }
+    }while (prezzo > 0);
     cout << "-------------------------------------------------------" << endl;
     cout << "Media prezzi dei prodotti: " << totalePrezziProdotti/4 << endl;
 
