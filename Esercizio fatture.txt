@@ -1,0 +1,61 @@
+Creare un programma che permette all' utente di inserire i dati di una fattura.
+Una volta inseriti i dati della testata della fattura possa inserire i dati del corpo.
+
+Una volta stampata la fattura, 
+si vuole stampare delle informazioni agginutive richieste dal cliente, 
+sono scritte in fondo alla secoknda fattura.
+
+________________________________________________________
+|                                                      |
+|   Da: [Azienda X]           per: [Azienda Cliente]   |
+|______________________________________________________|
+| cod |   Descrizione   | Q.nta | P.U | IVA |  totale  |
+| A01 |  computer       | 10    | 300 | 22  | 3660     |
+|______________________________________________________|
+|                                          |           |
+|  Prezzo totale                           |   3660    |
+|__________________________________________|___________|
+
+
+
+
+
+________________________________________________________
+|                                                      |
+|   Da: Amazon           per: RIvenditore s.r.la       |
+|______________________________________________________|
+| cod |   Descrizione   | Q.nta | P.U | IVA |  totale  |
+| A01 |  computer       | 10    | 300 | 22  | 3660     |
+| A01 |  smartphone     | 11    | 100 | 22  | 1342     |
+| A01 |  smarwatch      | 7     | 120 | 22  | 1024.80  |
+|______________________________________________________|
+|                                          |           |
+|  Prezzo totale                           |  6026.80  |
+|__________________________________________|___________|
+Descrizione del prodotto comprato in minor quantità
+Descrizione del prodotto comprato in maggior quantità
+Totale spese senza IVA e media delle spese sia con che senza IVA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aaa
+telefono
+10
+300€
+22%
+
+aaa telefono 10 300€ 22% tot
