@@ -20,7 +20,11 @@ int main() {
 
     string descMinorQuantita;
     string descMaxQuantita;
-    int  min;
+    int  min = 0;
+    int max = 0;
+
+    float mediaSpeseIva;
+    float mediaSpeseNoIva;
 
     cout << "inserire il compratore ";
     cin >> compratore;
@@ -54,20 +58,39 @@ int main() {
 
         totaleFattura += totProdotto;
 
+        // condizione && condizione      comdizione || condizione
+        if (max < quant || max == 0) {
+
+                    max = quant ;
+
+                    descMaxQuantita = desc;
+                }
+            
+
+        if (min > quant || min == 0) {
+
+            min = quant ;
+
+            descMinorQuantita = desc;
+        
+        }
 
     } while (cod != "stop");
 
     cout << totaleFattura << endl;
-    cout << nProdotti;
+    cout << nProdotti     << endl;
 
     if (nProdotti > 1) {
 
         // Descrizione del prodotto comprato in minor quantità
         // Descrizione del prodotto comprato in maggior quantità
-        // Totale spese senza IVA e media delle spese sia con che senza IVA
+        // media delle spese sia con che senza IVa
 
+       mediaSpeseIva =  totaleFattura / nProdotti;
 
-
+        cout << mediaSpeseIva << endl;
+        cout << descMinorQuantita << endl;
+        cout << descMaxQuantita << endl;
     }
 
 }
