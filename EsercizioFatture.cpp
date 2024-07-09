@@ -25,6 +25,7 @@ int main() {
 
     float mediaSpeseIva;
     float mediaSpeseNoIva;
+    float totPSenzaIva;
 
     cout << "inserire il compratore ";
     cin >> compratore;
@@ -58,6 +59,8 @@ int main() {
 
         totaleFattura += totProdotto;
 
+        totPSenzaIva +=(pU * quant);
+
         // condizione && condizione      comdizione || condizione
         if (max < quant || max == 0) {
 
@@ -86,11 +89,15 @@ int main() {
         // Descrizione del prodotto comprato in maggior quantità
         // media delle spese sia con che senza IVa
 
-       mediaSpeseIva =  totaleFattura / nProdotti;
+        mediaSpeseIva =  totaleFattura / nProdotti;
+        mediaSpeseNoIva=totPSenzaIva / nProdotti;
+
 
         cout << mediaSpeseIva << endl;
         cout << descMinorQuantita << endl;
         cout << descMaxQuantita << endl;
+        cout << mediaSpeseNoIva;
     }
+
 
 }
