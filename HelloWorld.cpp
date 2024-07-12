@@ -18,6 +18,12 @@ using namespace std;
 // funzione main, funzione dalla quale partono TUTTI i programmi C++
 int main() {
 
+    string str = "pippo";
+    cout << str << endl;
+
+    str += " ciao";
+    cout << str << endl;
+
     string x1;
     cout << x1 <<endl;
     
