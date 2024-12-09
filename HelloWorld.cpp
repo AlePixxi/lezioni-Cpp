@@ -19,7 +19,7 @@ using namespace std;
 int main() {
 
     string str = "pippo";
-    cout << str << endl;
+    cout << str[1] << endl;
 
     str += " ciao";
     cout << str << endl;

@@ -18,7 +18,8 @@ int main() {
     // else { [codice] }
     if (!(2 > 10)) {
         cout << "2 è maggiore di 10\n";
-    } else {
+    } 
+    else {
         cout << "2 non è maggiore di 10\n";
     }
 
